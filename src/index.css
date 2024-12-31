@@ -12,11 +12,19 @@
 /* User profile card */
 
 .userprofile-container {
-  @apply w-max p-3 flex border-2 border-black bg-white text-black rounded-2xl items-center;
+  @apply w-max p-3 border-2 border-black bg-white text-black rounded-2xl cursor-pointer;
 }
 
 .userprofile-container img {
   @apply w-5 h-5 ms-2;
+}
+
+.userprofile-container-img {
+  @apply transition-all ease-in-out duration-200 rotate-0;
+}
+
+.userprofile-container-img-active {
+  @apply transition-all ease-in-out duration-200 rotate-180;
 }
 
 .userprofile-container p {
