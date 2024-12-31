@@ -16,7 +16,7 @@
 }
 
 .userprofile-container img {
-  @apply w-5 h-5 ms-2;
+  @apply w-5 h-5;
 }
 
 .userprofile-container-img {
@@ -29,6 +29,10 @@
 
 .userprofile-container p {
   @apply font-bold text-lg;
+}
+
+.logout-btn {
+  @apply flex items-center mt-3;
 }
 
 /* ### */
