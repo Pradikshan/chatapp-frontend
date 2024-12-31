@@ -6,6 +6,9 @@ const UserProfile = () => {
   const onClick = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleLogout = () => {};
+
   return (
     <div className="userprofile-container" onClick={onClick}>
       <div className="flex items-center">
@@ -20,17 +23,14 @@ const UserProfile = () => {
           }`}
         />
       </div>
-      <button className="logout-btn">
-        <img src="../images/icons/logout.png" alt="logout-icon" />
-        <p className="ms-2">Logout</p>
-      </button>
-      {/* <div className="flex items-center mt-4 border-t-2 border-slate-400">
-        <img
-          src="../images/icons/logout.png"
-          alt="logout-icon"
-          className="mt-3"
-        />
-      </div> */}
+      {isOpen ? (
+        <button className="logout-btn" onClick={handleLogout}>
+          <img src="../images/icons/logout.png" alt="logout-icon" />
+          <p className="ms-2">Logout</p>
+        </button>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
