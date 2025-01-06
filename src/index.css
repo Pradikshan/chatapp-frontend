@@ -36,3 +36,12 @@
 }
 
 /* ### */
+
+/* Login page */
+.login-btn {
+  @apply block mx-auto w-24 h-16 p-4 my-5 shadow-lg rounded-full bg-black text-white font-bold;
+}
+
+.login-btn:hover {
+  @apply border-4 border-black bg-white text-black;
+}
