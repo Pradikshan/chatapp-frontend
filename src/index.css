@@ -45,3 +45,11 @@
 .login-btn:hover {
   @apply border-4 border-black bg-white text-black;
 }
+
+.signup-link {
+  @apply block text-center underline decoration-solid decoration-2 decoration-blue-500 text-blue-500;
+}
+
+.signup-link:hover {
+  @apply text-purple-500 decoration-purple-500;
+}
