@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/home");
+  };
+
   return (
     <div className="min-h-screen h-screen flex justify-center items-center">
       <div className="p-5 border-2 border-slate-500 rounded-2xl shadow-xl">
@@ -28,8 +35,14 @@ const LoginPage = () => {
             />
           </div>
 
-          <button className="login-btn">Login</button>
+          <button className="login-btn" onClick={handleLogin}>
+            Login
+          </button>
         </form>
+
+        <a href="/signup" className="signup-link">
+          Sign up
+        </a>
       </div>
     </div>
   );
