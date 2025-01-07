@@ -53,3 +53,10 @@
 .signup-link:hover {
   @apply text-purple-500 decoration-purple-500;
 }
+
+/* ### */
+
+/* Active users */
+.active-users-container {
+  @apply w-max p-10 h-[100vw] min-h-screen;
+}
