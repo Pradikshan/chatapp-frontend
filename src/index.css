@@ -58,5 +58,5 @@
 
 /* Active users */
 .active-users-container {
-  @apply w-max p-10 h-[100vw] min-h-screen;
+  @apply w-[40%] p-8 h-screen min-h-screen shadow-2xl border-r-2 border-slate-400;
 }
