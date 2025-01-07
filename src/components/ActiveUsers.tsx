@@ -4,9 +4,12 @@ const ActiveUsers = () => {
   const users = ["John", "Jack", "Jane"];
   return (
     <div className="active-users-container">
-      {users.map((item) => (
-        <p>{item}</p>
-      ))}
+      <p className="font-bold text-2xl">Active users</p>
+      <div className="mt-10">
+        {users.map((item) => (
+          <p className="text-xl">{item}</p>
+        ))}
+      </div>
     </div>
   );
 };
