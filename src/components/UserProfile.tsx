@@ -1,13 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const UserProfile = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const navigate = useNavigate();
 
   const onClick = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLogout = () => {};
+  const handleLogout = () => {
+    navigate("/");
+  };
 
   return (
     <div className="userprofile-container" onClick={onClick}>
