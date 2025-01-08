@@ -5,7 +5,7 @@ import ChatInput from "./ChatInput";
 
 const ChatContainer = () => {
   return (
-    <div className="border-2 border-black w-full">
+    <div className="border-2 border-black w-full h-full flex flex-col justify-between">
       <ChatHeader />
       <ChatBody />
       <ChatInput />
