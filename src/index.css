@@ -60,3 +60,25 @@
 .active-users-container {
   @apply w-max p-8 h-screen min-h-screen shadow-2xl border-r-2 border-slate-400;
 }
+
+/* ### */
+
+/* Chat header */
+.chat-header-container {
+  @apply flex justify-between p-5 bg-orange-300;
+}
+
+/* ### */
+
+/* Chat input */
+.chat-input-container {
+  @apply p-5 border-2 border-black bg-orange-200;
+}
+
+.message-send-btn {
+  @apply p-4 bg-green-300 rounded-3xl font-bold ms-3;
+}
+
+.message-send-btn:hover {
+  @apply border-2 border-green-400 bg-white text-black;
+}
