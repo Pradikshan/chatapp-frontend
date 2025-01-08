@@ -35,7 +35,7 @@ const LoginPage = () => {
             />
           </div>
 
-          <button className="login-btn" onClick={handleLogin}>
+          <button id="login-btn" className="login-btn" onClick={handleLogin}>
             Login
           </button>
         </form>
