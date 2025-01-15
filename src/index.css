@@ -37,20 +37,20 @@
 
 /* ### */
 
-/* Login page */
-.login-btn {
+/* Form component */
+.form-btn {
   @apply block mx-auto w-24 h-16 p-4 my-5 shadow-lg rounded-full bg-black text-white font-bold;
 }
 
-.login-btn:hover {
+.form-btn:hover {
   @apply border-4 border-black bg-white text-black;
 }
 
-.signup-link {
+.form-link {
   @apply block text-center underline decoration-solid decoration-2 decoration-blue-500 text-blue-500;
 }
 
-.signup-link:hover {
+.form-link:hover {
   @apply text-purple-500 decoration-purple-500;
 }
 
