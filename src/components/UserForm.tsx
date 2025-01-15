@@ -1,43 +1,51 @@
-import React from "react";
+// import React from "react";
 
-const UserForm = ({
-  buttonText,
-  buttonFunc,
-}: {
-  buttonText: string;
-  buttonFunc: React.MouseEventHandler<HTMLButtonElement>;
-}) => {
-  return (
-    <div>
-      <form className="mt-6">
-        <div className="my-3">
-          <label htmlFor="user-name" className="font-bold text-lg">
-            User Name:
-          </label>
-          <input
-            type="text"
-            id="user-name"
-            className="border-2 border-black rounded-xl mx-2"
-          />
-        </div>
+// const UserForm = ({
+//   buttonText,
+//   buttonFunc,
+// }: {
+//   buttonText: string;
+//   buttonFunc: React.MouseEventHandler<HTMLButtonElement>;
+// }) => {
+//     function saveUserCredentails(){
 
-        <div className="my-3">
-          <label htmlFor="password" className="font-bold text-lg">
-            Password:
-          </label>
-          <input
-            type="text"
-            id="password"
-            className="border-2 border-black rounded-xl mx-2"
-          />
-        </div>
+//     }
+//   return (
+//     <div>
+//       <form className="mt-6">
+//         <div className="my-3">
+//           <label htmlFor="user-name" className="font-bold text-lg">
+//             User Name:
+//           </label>
+//           <input
+//             type="text"
+//             id="user-name"
+//             className="border-2 border-black rounded-xl mx-2"
+//           />
+//         </div>
 
-        <button id="form-btn" className="form-btn" onClick={buttonFunc}>
-          {buttonText}
-        </button>
-      </form>
-    </div>
-  );
-};
+//         <div className="my-3">
+//           <label htmlFor="password" className="font-bold text-lg">
+//             Password:
+//           </label>
+//           <input
+//             type="text"
+//             id="password"
+//             className="border-2 border-black rounded-xl mx-2"
+//           />
+//         </div>
 
-export default UserForm;
+//         <button
+//           id="form-btn"
+//           className="form-btn"
+//           type="submit"
+//           onClick={buttonFunc}
+//         >
+//           {buttonText}
+//         </button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default UserForm;
