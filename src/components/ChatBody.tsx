@@ -36,7 +36,7 @@ const ChatBody = () => {
   }, [socket]);
 
   return (
-    <div className="flex flex-col border-2 border-red-500 h-full p-3">
+    <div className="flex flex-col  h-full p-3">
       {messages.map((message) =>
         message.username === username ? (
           <>
