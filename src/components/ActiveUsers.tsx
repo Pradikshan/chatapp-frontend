@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import useAppStore from "../store/store";
 import { IUser } from "../utils/interface";
 
