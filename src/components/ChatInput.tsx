@@ -14,12 +14,20 @@ const ChatInput = () => {
 
   const sendMessage = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(`The message is: ${message}`);
 
-    socket?.emit("message", {
-      text: message,
-      username: username,
-    });
+    if (socket) {
+      try {
+        socket?.emit("message", {
+          text: message,
+          username: username,
+        });
+      } catch (error) {
+        console.log(`Error sending message: ${error}`);
+      }
+    } else {
+      console.log(`Socket initialization error`);
+    }
+
     setMessage("");
   };
   return (
