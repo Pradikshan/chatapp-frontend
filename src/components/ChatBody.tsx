@@ -8,6 +8,7 @@ const ChatBody = () => {
   const socket = useAppStore((state) => state.socket);
 
   const [messages, setMessages] = useState<IMessage[]>([]);
+  const [typingStatus, setTypingStatus] = useState<string>("");
 
   useEffect(() => {
     if (socket) {
@@ -22,12 +23,15 @@ const ChatBody = () => {
           },
         ]);
       });
+
+      socket.on("typingResponse", (data) => setTypingStatus(data));
     }
 
     // cleanup function to remove the event listener when the component unmounts
     // does not cause duplicate event listeners
     return () => {
       socket?.off("messageResponse");
+      socket?.off("typingResponse");
     };
   }, [socket]);
 
@@ -54,6 +58,7 @@ const ChatBody = () => {
           </div>
         )
       )}
+      {typingStatus && <p>{typingStatus}</p>}
     </div>
   );
 };
