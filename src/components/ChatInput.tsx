@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import useAppStore from "../store/store";
 
 const ChatInput = () => {
+  const socket = useAppStore((state) => state.socket);
+
+  const username = useAppStore((state) => state.username);
+
   const [message, setMessage] = useState<string>("");
 
   const handleMessage = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -9,8 +14,13 @@ const ChatInput = () => {
 
   const sendMessage = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setMessage("");
     console.log(`The message is: ${message}`);
+
+    socket?.emit("message", {
+      text: message,
+      username: username,
+    });
+    setMessage("");
   };
   return (
     <div className="chat-input-container">
@@ -24,8 +34,8 @@ const ChatInput = () => {
             value={message}
             onChange={handleMessage}
           />
+          <button className="message-send-btn">Send</button>
         </form>
-        <button className="message-send-btn">Send</button>
       </div>
     </div>
   );
