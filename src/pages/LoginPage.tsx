@@ -84,7 +84,7 @@ const LoginPage = () => {
               type="text"
               id="username"
               name="username"
-              className="border-2 border-black rounded-xl mx-2"
+              className="border-2 border-black rounded-xl mx-2 p-2"
               onChange={handleChange}
             />
           </div>
@@ -94,9 +94,9 @@ const LoginPage = () => {
           </button>
         </form>
 
-        <a href="/signup" className="form-link">
+        {/* <a href="/signup" className="form-link">
           Sign up
-        </a>
+        </a> */}
       </div>
     </div>
   );
