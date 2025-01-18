@@ -20,9 +20,6 @@ const ActiveUsers = () => {
     };
   }, [socket]);
 
-  // console.log(`Users: ${JSON.stringify(users)}`);
-
-  // const users = ["John", "Jack", "Jane"];
   return (
     <div className="active-users-container">
       <p className="font-bold text-2xl">Active users</p>
