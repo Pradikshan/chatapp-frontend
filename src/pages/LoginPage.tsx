@@ -60,9 +60,12 @@ const LoginPage = () => {
           </button>
         </form>
 
-        {/* <a href="/signup" className="form-link">
-          Sign up
-        </a> */}
+        <p className="font-bold text-center">
+          Note: If the app does not work as expected then this is due to the
+          backend service not functioning as expected. Not due to faulty code
+          but rather because the service is shutdown as I have hosted the
+          backend on a free hosting servive
+        </p>
       </div>
     </div>
   );
