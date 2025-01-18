@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { IUserFormData } from "../utils/type";
+import { UserFormData } from "../utils/type";
 import useAppStore from "../store/store";
 
 const LoginPage = () => {
@@ -44,8 +44,10 @@ const LoginPage = () => {
   //   }
   // };
 
+  const socket = useAppStore((state) => state.socket);
+
   const navigate = useNavigate();
-  const [formData, setFormData] = useState<IUserFormData>({ username: "" });
+  const [formData, setFormData] = useState<UserFormData>({ username: "" });
   const setUsername = useAppStore((state) => state.setUsername);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -65,6 +67,10 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       setUsername(formData.username);
+      socket?.emit("newUser", {
+        userName: formData.username,
+        socketId: socket.id,
+      });
       navigate("/home");
     } catch (error) {
       console.log(`Error in login: ${error}`);
