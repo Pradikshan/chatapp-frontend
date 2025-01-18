@@ -4,3 +4,8 @@ export interface IMessage {
   id: string;
   socketId: string;
 }
+
+export interface IUser {
+  username: string;
+  socketId: string;
+}
