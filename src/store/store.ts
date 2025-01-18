@@ -1,9 +1,10 @@
-import { Socket } from "socket.io-client";
 import { create } from "zustand";
+import { Socket } from "socket.io-client";
 
 interface AppState {
   username: string;
   setUsername: (username: string) => void;
+
   socket: Socket | null;
   setSocket: (socket: Socket) => void;
 }
