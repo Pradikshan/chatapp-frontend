@@ -20,6 +20,8 @@ const ChatInput = () => {
         socket?.emit("message", {
           text: message,
           username: username,
+          id: `11-01-11-${socket.id}`,
+          socketId: socket.id,
         });
       } catch (error) {
         console.log(`Error sending message: ${error}`);
