@@ -68,7 +68,7 @@ const LoginPage = () => {
     try {
       setUsername(formData.username);
       socket?.emit("newUser", {
-        userName: formData.username,
+        username: formData.username,
         socketId: socket.id,
       });
       navigate("/home");
