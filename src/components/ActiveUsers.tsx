@@ -27,9 +27,6 @@ const ActiveUsers = () => {
     <div className="active-users-container">
       <p className="font-bold text-2xl">Active users</p>
       <div className="mt-10">
-        {/* {users.map((item) => (
-          <p className="text-xl">{item}</p>
-        ))} */}
         {users.map(({ username, socketId }) => (
           <p className="text-xl" key={socketId}>
             {username}
