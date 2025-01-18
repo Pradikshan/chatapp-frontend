@@ -4,46 +4,6 @@ import { UserFormData } from "../utils/type";
 import useAppStore from "../store/store";
 
 const LoginPage = () => {
-  // const [storedUserData, setStoredUserData] = useState<UserFormData>({
-  //   name: "",
-  //   password: "",
-  // });
-
-  // const [currentFormData, setCurrentFormData] = useState<UserFormData>({
-  //   name: "",
-  //   password: "",
-  // });
-
-  // function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-  //   setCurrentFormData({
-  //     ...currentFormData,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // }
-
-  // useEffect(() => {
-  //   const storedData = localStorage.getItem("userData");
-
-  //   if (storedData) {
-  //     const userData: UserFormData = JSON.parse(storedData);
-  //     setStoredUserData(userData);
-  //   }
-  // }, []);
-
-  // const navigate = useNavigate();
-
-  // const handleLogin = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   if (
-  //     currentFormData.name == storedUserData.name &&
-  //     currentFormData.password == storedUserData.password
-  //   ) {
-  //     navigate("/home");
-  //   } else {
-  //     alert("Invalid credentails");
-  //   }
-  // };
-
   const socket = useAppStore((state) => state.socket);
 
   const navigate = useNavigate();
