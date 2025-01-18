@@ -89,19 +89,6 @@ const LoginPage = () => {
             />
           </div>
 
-          {/* <div className="my-3">
-            <label htmlFor="password" className="font-bold text-lg">
-              Password:
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              className="border-2 border-black rounded-xl mx-2"
-              onChange={handleChange}
-            />
-          </div> */}
-
           <button id="form-btn" className="form-btn" type="submit">
             Login
           </button>
