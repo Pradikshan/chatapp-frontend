@@ -4,8 +4,8 @@ import Approutes from "./routes/Approutes";
 import { io } from "socket.io-client";
 import useAppStore from "./store/store";
 
-const socket = io("https://chatapp-backend-fr7g.onrender.com");
-
+const backendURL = import.meta.env.VITE_BACKEND_URL;
+const socket = io(`${backendURL}`);
 function App() {
   const setSocket = useAppStore((state) => state.setSocket);
 
