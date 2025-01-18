@@ -38,36 +38,38 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen h-screen flex justify-center items-center">
-      <div className="p-5 border-2 border-slate-500 rounded-2xl shadow-xl">
-        <p className="text-center font-bold text-xl">Enter your credentials</p>
-        <form className="mt-6" onSubmit={handleLogin}>
-          <div className="my-3">
-            <label htmlFor="username" className="font-bold text-lg">
-              User Name:
-            </label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              className="border-2 border-black rounded-xl mx-2 p-2"
-              onChange={handleChange}
-            />
-          </div>
+    <>
+      <div className="min-h-screen h-screen flex justify-center items-center">
+        <div className="p-5 border-2 border-slate-500 rounded-2xl shadow-xl">
+          <p className="text-center font-bold text-xl">
+            Enter your credentials
+          </p>
+          <form className="mt-6" onSubmit={handleLogin}>
+            <div className="my-3">
+              <label htmlFor="username" className="font-bold text-lg">
+                User Name:
+              </label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                className="border-2 border-black rounded-xl mx-2 p-2"
+                onChange={handleChange}
+              />
+            </div>
 
-          <button id="form-btn" className="form-btn" type="submit">
-            Login
-          </button>
-        </form>
-
-        <p className="font-bold text-center">
-          Note: If the app does not work as expected then this is due to the
-          backend service not functioning as expected. Not due to faulty code
-          but rather because the service is shutdown as I have hosted the
-          backend on a free hosting servive
-        </p>
+            <button id="form-btn" className="form-btn" type="submit">
+              Login
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+      <p className="font-bold text-center">
+        Note: If the app does not work as expected then this is due to the
+        backend service not functioning as expected because the service is
+        shutdown as I have hosted the backend on a free hosting servive
+      </p>
+    </>
   );
 };
 
