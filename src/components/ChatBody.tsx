@@ -28,7 +28,7 @@ const ChatBody = () => {
     }
 
     // cleanup function to remove the event listener when the component unmounts
-    // does not cause duplicate event listeners
+    // prevents duplicate event listeners
     return () => {
       socket?.off("messageResponse");
       socket?.off("typingResponse");
