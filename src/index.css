@@ -62,14 +62,14 @@
 
 /* Active users */
 .active-users-container {
-  @apply w-max p-8 h-screen min-h-screen shadow-2xl border-r-2 border-slate-400;
+  @apply w-max p-8 h-screen min-h-screen shadow-2xl border-2 border-black;
 }
 
 /* ### */
 
 /* Chat header */
 .chat-header-container {
-  @apply flex justify-between p-5 bg-orange-300;
+  @apply flex justify-between p-5 bg-orange-300 border-2 border-black;
 }
 
 /* ### */
