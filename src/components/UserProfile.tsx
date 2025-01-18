@@ -18,6 +18,7 @@ const UserProfile = () => {
     try {
       setUsername("");
       navigate("/");
+      window.location.reload();
     } catch (error) {
       console.log(`Logout error: ${error}`);
     }
