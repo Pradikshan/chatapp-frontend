@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply font-hanken;
+}
+
 /* Navbar */
 
 .navbar {
