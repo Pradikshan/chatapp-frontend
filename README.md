@@ -13,6 +13,10 @@ SocketIO
 
 [Live demo link](https://realtime-chatapp-frontend.netlify.app/)
 
+## Link to backend code
+
+[Backend code](https://github.com/Pradikshan/chatapp-backend)
+
 ## Screenshots of the project
 
 ### Login Page
