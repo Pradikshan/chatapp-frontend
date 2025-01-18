@@ -1,4 +1,4 @@
-export type IUserFormData = {
+export type UserFormData = {
   username: string;
   // password: string;
 };
