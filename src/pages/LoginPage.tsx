@@ -66,8 +66,7 @@ const LoginPage = () => {
       </div>
       <p className="font-bold text-center">
         Note: If the app does not work as expected then this is due to the
-        backend service not functioning because the service has shutdown as I
-        have hosted the backend on a free hosting service
+        backend service not functioning because the instance has shutdown.
       </p>
     </>
   );
